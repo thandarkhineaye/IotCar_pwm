@@ -77,7 +77,7 @@ void handleCar() {
   }  
 
   switch (BtnValue) {
-   case 1: // sola donuş
+   case 1: 
      motorSpeed(emaSpeed,LOW,LOW,embSpeed,HIGH,LOW); 
       /*SolSinyal = 1;
       digitalWrite(Led1_pin,HIGH);*/
@@ -89,12 +89,12 @@ void handleCar() {
      //digitalWrite(Led1_pin,LOW);
      //digitalWrite(Led2_pin,LOW);*/
      break;
-  case  3:// saga donuş  
+  case  3:
      motorSpeed(emaSpeed,HIGH,LOW,embSpeed,LOW,LOW); 
      /*SagSinyal = 1;
      //digitalWrite(Led2_pin,HIGH);*/
      break;
-  case  4:// tam sola donuş   
+  case  4:
      motorSpeed(emaSpeed,LOW,HIGH,embSpeed,HIGH,LOW); 
      /*SolSinyal = 1;
      digitalWrite(Led1_pin,HIGH);*/
@@ -111,13 +111,13 @@ void handleCar() {
      /*SagSinyal = 1;
     digitalWrite(Led2_pin,HIGH);*/
     break;
-  case 7://sol geri
+  case 7:
     motorSpeed(emaSpeed,LOW,LOW,embSpeed,LOW,HIGH); 
     break;
-  case 8:// tam geri
+  case 8:
     motorSpeed(emaSpeed,LOW,HIGH,embSpeed,LOW,HIGH);      
     break;    
-  case 9:// sag geri  
+  case 9:
     motorSpeed(emaSpeed,LOW,HIGH,embSpeed,LOW,LOW); 
     default:
     break;
